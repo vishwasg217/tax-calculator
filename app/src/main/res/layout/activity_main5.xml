@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity5">
+
+    <TextView
+        android:id="@+id/page5_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        android:text="Deductions"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/interest_deposits_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:text="Interest from Deposits - 80TTA"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/page5_title" />
+
+    <EditText
+        android:id="@+id/interest_deposits_input"
+        android:layout_width="257dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Enter Value"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/interest_deposits_label"
+        app:layout_constraintTop_toBottomOf="@+id/interest_deposits_label" />
+
+    <TextView
+        android:id="@+id/donations_charity_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="120dp"
+        android:text="Donations to Charity - 80G"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/page5_title" />
+
+    <EditText
+        android:id="@+id/donations_charity_input"
+        android:layout_width="257dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Enter Value"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/donations_charity_label"
+        app:layout_constraintTop_toBottomOf="@+id/donations_charity_label" />
+
+    <TextView
+        android:id="@+id/interest_housing_loan_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="236dp"
+        android:text="Interest on Housing Loan - 80EEA"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/page5_title" />
+
+    <EditText
+        android:id="@+id/interest_housing_loan_input"
+        android:layout_width="257dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Enter Value"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/interest_housing_loan_label"
+        app:layout_constraintTop_toBottomOf="@+id/interest_housing_loan_label" />
+
+    <Button
+        android:id="@+id/next_step"
+        android:layout_width="145dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="50dp"
+        android:text="Next Step"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

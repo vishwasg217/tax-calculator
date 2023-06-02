@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/page1_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="44dp"
+        android:text="Basic Details"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fin_year_text"
+        android:layout_width="329dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="120dp"
+        android:text="Which Financial Year do you want to calculate taxes for?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/age_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="336dp"
+        android:text="Your Age"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/fin_year_ops"
+        android:layout_width="332dp"
+        android:layout_height="131dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/fin_year_text"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/fin_year_text"
+        app:layout_constraintTop_toBottomOf="@+id/fin_year_text">
+
+        <RadioButton
+            android:id="@+id/fin_year_op1"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="FY 2023-2024 [Latest Budget] (Return to be filed between 1st April 2024 - 31st March 2025)" />
+
+        <RadioButton
+            android:id="@+id/fin_year_op2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FY 2022-2023 (Return to be filed between 1st April 2023 - 31st March 2024)" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="330dp"
+        android:layout_height="174dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/age_text">
+
+        <RadioButton
+            android:id="@+id/age_op1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0 to 60" />
+
+        <RadioButton
+            android:id="@+id/age_op"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="60 to 80" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="80 and above" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/next_step"
+        android:layout_width="145dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="72dp"
+        android:text="Next Step"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

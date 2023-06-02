@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity2"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="61dp">
+
+        <TextView
+            android:id="@+id/page5_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="32dp"
+            android:text="Income Details"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/sal_inc_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="24dp"
+            android:text="Income from Salary"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/page5_title" />
+
+
+        <TextView
+            android:id="@+id/int_inc_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="144dp"
+            android:text="Income from Interest"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/page5_title" />
+
+        <TextView
+            android:id="@+id/rent_inc_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="252dp"
+            android:text="Rental Income Received"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/page5_title" />
+
+        <TextView
+            android:id="@+id/dig_inc_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="388dp"
+            android:text="Income from Digital Assets"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/page5_title" />
+
+
+        <EditText
+            android:id="@+id/inc_sal_input"
+            android:layout_width="257dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="annual salary"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toStartOf="@+id/sal_inc_label"
+            app:layout_constraintTop_toBottomOf="@+id/sal_inc_label" />
+
+        <EditText
+            android:id="@+id/int_inc_input"
+            android:layout_width="257dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="interest income"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toStartOf="@+id/int_inc_label"
+            app:layout_constraintTop_toBottomOf="@+id/int_inc_label" />
+
+        <EditText
+            android:id="@+id/rent_inc_input"
+            android:layout_width="257dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="rental income"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toStartOf="@+id/rent_inc_label"
+            app:layout_constraintTop_toBottomOf="@+id/rent_inc_label"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/dig_inc_input"
+            android:layout_width="257dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="digital income"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toStartOf="@+id/dig_inc_label"
+            app:layout_constraintTop_toBottomOf="@+id/dig_inc_label" />
+
+        <Button
+            android:id="@+id/next_step"
+            android:layout_width="145dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="50dp"
+            android:text="Next Step"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
