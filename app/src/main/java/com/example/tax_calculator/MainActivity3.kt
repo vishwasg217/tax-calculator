@@ -64,6 +64,7 @@ class MainActivity3 : AppCompatActivity() {
         var slab2: Double = 0.0
         var slab3: Double = 0.0
         var slab4: Double = 0.0
+        var slab5: Double = 0.0
         var final_slab: Double = 0.0
 
         if(total>500000)
@@ -95,20 +96,20 @@ class MainActivity3 : AppCompatActivity() {
 
         if(total>1250000)
         {
-            slab3 = ((1250000 - 1000000)*20/100).toDouble()
+            slab4 = ((1250000 - 1000000)*20/100).toDouble()
         }
         else
         {
-            slab3 = (total - 1000000)*20/100
+            slab4 = (total - 1000000)*20/100
         }
 
         if(total>1500000)
         {
-            slab4 = ((1500000 - 1250000)*25/100).toDouble()
+            slab5 = ((1500000 - 1250000)*25/100).toDouble()
         }
         else
         {
-            slab4 = (total - 1250000)*25/100
+            slab5 = (total - 1250000)*25/100
         }
 
         if(total>1500000)
@@ -120,13 +121,21 @@ class MainActivity3 : AppCompatActivity() {
             final_slab = 0.0
         }
 
-        val result: Double = slab1 + slab2 + final_slab
+        slab1 = if (slab1 < 0) 0.0 else slab1
+        slab2 = if (slab2 < 0) 0.0 else slab2
+        slab3 = if (slab3 < 0) 0.0 else slab3
+        slab4 = if (slab4 < 0) 0.0 else slab4
+        slab5 = if (slab5 < 0) 0.0 else slab5
+        final_slab = if (final_slab < 0) 0.0 else final_slab
+
+        val result: Double = slab1 + slab2 + slab3 + slab4 + slab5 + final_slab
 
         Log.i("Total: ", total.toString())
         Log.i("Slab 1: ", slab1.toString())
         Log.i("Slab 2: ", slab2.toString())
         Log.i("Slab 3: ", slab3.toString())
         Log.i("Slab 4: ", slab4.toString())
+        Log.i("Slab 5: ", slab5.toString())
         Log.i("final slab: ", final_slab.toString())
         Log.i("Result: ", result.toString())
         return result
